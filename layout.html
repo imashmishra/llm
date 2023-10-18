@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Options</title>
+    <style>
+        /* Center the content */
+        body {
+            background-color: #f4f4f4;
+            background-image: url('file:///C:/Users/ashmita/OneDrive/Desktop/tata%20tech/images%20(1).jpeg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .option {
+            margin: 10px;
+        }
+
+        .chat-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #bc9667;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .chat-button:hover {
+            background-color: #997551;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What you want to put online?</h1>
+        <div class="option">
+            <button class="chat-button" id="blog-button">Write a Blog</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="article-button">Write an Article</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="instagram-button">Create an Instagram Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="facebook-button">Create a Facebook Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="linkedin-button">Create a LinkedIn Post</button>
+        </div>
+    </div>
+
+    <script>
+        function openContentSelectionPage() {
+            window.open('drop.html', '_blank');
+        }
+
+        const blogButton = document.getElementById('blog-button');
+        const articleButton = document.getElementById('article-button');
+        const instagramButton = document.getElementById('instagram-button');
+        const facebookButton = document.getElementById('facebook-button');
+        const linkedinButton = document.getElementById('linkedin-button');
+
+        blogButton.addEventListener('click', openContentSelectionPage);
+        articleButton.addEventListener('click', openContentSelectionPage);
+        instagramButton.addEventListener('click', openContentSelectionPage);
+        facebookButton.addEventListener('click', openContentSelectionPage);
+        linkedinButton.addEventListener('click', openContentSelectionPage);
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Options</title>
+    <style>
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .option {
+            margin: 10px;
+        }
+
+        .chat-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What do you want to create?</h1>
+        <div class="option">
+            <button class="chat-button" id="blog-button">Write a Blog</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="article-button">Write an Article</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="instagram-button">Create an Instagram Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="facebook-button">Create a Facebook Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="linkedin-button">Create a LinkedIn Post</button>
+        </div>
+    </div>
+
+    <script>
+        function openContentSelectionPage() {
+            window.open('drop.html', '_blank');
+        }
+
+        const blogButton = document.getElementById('blog-button');
+        const articleButton = document.getElementById('article-button');
+        const instagramButton = document.getElementById('instagram-button');
+        const facebookButton = document.getElementById('facebook-button');
+        const linkedinButton = document.getElementById('linkedin-button');
+
+        blogButton.addEventListener('click', openContentSelectionPage);
+        articleButton.addEventListener('click', openContentSelectionPage);
+        instagramButton.addEventListener('click', openContentSelectionPage);
+        facebookButton.addEventListener('click', openContentSelectionPage);
+        linkedinButton.addEventListener('click', openContentSelectionPage);
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Options</title>
+    <style>
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .option {
+            margin: 10px;
+        }
+
+        .chat-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Writing Option</h1>
+        <div class="option">
+            <button class="chat-button" id="blog-button">Write a Blog</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="article-button">Write an Article</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="instagram-button">Create an Instagram Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="facebook-button">Create a Facebook Post</button>
+        </div>
+        <div class="option">
+            <button class="chat-button" id="linkedin-button">Create a LinkedIn Post</button>
+        </div>
+    </div>
+
+    <script>
+        const blogButton = document.getElementById('blog-button');
+        const articleButton = document.getElementById('article-button');
+        const instagramButton = document.getElementById('instagram-button');
+        const facebookButton = document.getElementById('facebook-button');
+        const linkedinButton = document.getElementById('linkedin-button');
+
+        function openChatWindow(writingType) {
+            const chatWindow = window.open(`${writingType}.html`, 'Chat Window', 'width=400,height=600');
+        }
+
+        blogButton.addEventListener('click', () => {
+            openChatWindow('blog');
+        });
+
+        articleButton.addEventListener('click', () => {
+            openChatWindow('article');
+        });
+
+        instagramButton.addEventListener('click', () => {
+            openChatWindow('instagram');
+        });
+
+        facebookButton.addEventListener('click', () => {
+            openChatWindow('facebook');
+        });
+
+        linkedinButton.addEventListener('click', () => {
+            openChatWindow('linkedin');
+        });
+    </script>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Options</title>
+    <style>
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .option {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choose Writing Option</h1>
+        <div class="option" id="blog">
+            <a href="blog.html" target="_blank">Write a Blog</a>
+        </div>
+        <div class="option" id="article">
+            <a href="article.html" target="_blank">Write an Article</a>
+        </div>
+        <div class="option" id="instagram">
+            <a href="instagram.html" target="_blank">Create an Instagram Post</a>
+        </div>
+        <div class="option" id="facebook">
+            <a href="facebook.html" target="_blank">Create a Facebook Post</a>
+        </div>
+        <div class="option" id="linkedin">
+            <a href="linkedin.html" target="_blank">Create a LinkedIn Post</a>
+        </div>
+    </div>
+</body>
+</html> --> -->

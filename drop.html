@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Selection</title>
+    <style>
+        /* Set the background image */
+        body {
+            background-image: url('file:///C:/Users/ashmita/OneDrive/Desktop/tata%20tech/recent.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Container style */
+        .container {
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Style for dropdowns and button */
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #bc9667;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #997551;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Specify your Content here!!</h1>
+        
+        <label for="content-length">Content Length:</label>
+        <select id="content-length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <label for="content-style">Content Style:</label>
+        <select id="content-style">
+            <option value="formal">Formal</option>
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <label for="content-tone">Content Tone:</label>
+        <select id="content-tone">
+            <option value="informative">Informative</option>
+            <option value="friendly">Friendly</option>
+            <option value="authoritative">Authoritative</option>
+        </select>
+
+        <button onclick="openChatWindow()">Generate</button>
+    </div>
+
+    <script>
+        function openChatWindow() {
+            const contentLength = document.getElementById("content-length").value;
+            const contentStyle = document.getElementById("content-style").value;
+            const contentTone = document.getElementById("content-tone").value;
+
+            // You can use these values for further processing or send them to the chat window.
+
+            // Open a new window or tab for the chat window
+            const chatWindow = window.open('chat.html', 'Brand Assistant', 'width=400,height=600');
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Content Selection</title>
+    <style>
+
+    body {
+            background-image: url('');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* Container style */
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Style for dropdowns and button */
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Specify your content here!!</h1>
+        
+        <label for="content-length">Content Length:</label>
+        <select id="content-length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <label for="content-style">Content Style:</label>
+        <select id="content-style">
+            <option value="formal">Formal</option>
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <label for="content-tone">Content Tone:</label>
+        <select id="content-tone">
+            <option value="informative">Informative</option>
+            <option value="friendly">Friendly</option>
+            <option value="authoritative">Authoritative</option>
+        </select>
+        
+        <button onclick="submitSelection">Create</button>
+    </div>
+
+    <script>
+        // JavaScript function to handle form submission
+        function submitSelection() {
+            const contentLength = document.getElementById("content-length").value;
+            const contentStyle = document.getElementById("content-style").value;
+            const contentTone = document.getElementById("content-tone").value;
+
+            // You can use these values for further processing or send them to a server.
+            console.log("Content Length: " + contentLength);
+            console.log("Content Style: " + contentStyle);
+            console.log("Content Tone: " + contentTone);
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Content Selection</title>
+    <style>
+        /* Center the content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Basic CSS for styling the dropdowns */
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Content Selection</h1>
+        
+        <label for="content-length">Content Length:</label>
+        <select id="content-length">
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+        </select>
+
+        <br><br>
+
+        <label for "content-style">Content Style:</label>
+        <select id="content-style">
+            <option value="formal">Formal</option>
+            <option value="casual">Casual</option>
+            <option value="professional">Professional</option>
+        </select>
+
+        <br><br>
+
+        <label for="content-tone">Content Tone:</label>
+        <select id="content-tone">
+            <option value="informative">Informative</option>
+            <option value="friendly">Friendly</option>
+            <option value="authoritative">Authoritative</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="submitSelection()">Submit</button>
+    </div>
+
+    <script>
+        // JavaScript function to handle form submission
+        function submitSelection() {
+            const contentLength = document.getElementById("content-length").value;
+            const contentStyle = document.getElementById("content-style").value;
+            const contentTone = document.getElementById("content-tone").value;
+
+            // You can use these values for further processing or send them to a server.
+            console.log("Content Length: " + contentLength);
+            console.log("Content Style: " + contentStyle);
+            console.log("Content Tone: " + contentTone);
+        }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Content Selection</title>
+    <style>
+        /* Basic CSS for styling the dropdowns */
+        select {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Content Selection</h1>
+    
+    <label for="content-length">Content Length:</label>
+    <select id="content-length">
+        <option value="short">Short</option>
+        <option value="medium">Medium</option>
+        <option value="long">Long</option>
+    </select>
+
+    <br><br>
+
+    <label for="content-style">Content Style:</label>
+    <select id="content-style">
+        <option value="formal">Formal</option>
+        <option value="casual">Casual</option>
+        <option value="professional">Professional</option>
+    </select>
+
+    <br><br>
+
+    <label for="content-tone">Content Tone:</label>
+    <select id="content-tone">
+        <option value="informative">Informative</option>
+        <option value="friendly">Friendly</option>
+        <option value="authoritative">Authoritative</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="submitSelection()">Submit</button>
+
+    <script>
+        // JavaScript function to handle form submission
+        function submitSelection() {
+            const contentLength = document.getElementById("content-length").value;
+            const contentStyle = document.getElementById("content-style").value;
+            const contentTone = document.getElementById("content-tone").value;
+
+            // You can use these values for further processing or send them to a server.
+            console.log("Content Length: " + contentLength);
+            console.log("Content Style: " + contentStyle);
+            console.log("Content Tone: " + contentTone);
+        }
+    </script>
+</body>
+</html> -->
